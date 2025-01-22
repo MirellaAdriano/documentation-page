@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<title>Portugol Pseudocode</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header> Portugol Pseudocode</header>
+     <ul>
+    <li><a class="nav-link" href="#introduction">Introduction</a></li>
+    <li><a class="nav-link" href="#history">History</a></li>
+    <li><a class="nav-link" href="#variations">Variations</a></li>
+    <li><a class="nav-link" href="#portugol_method">Portugol method</a></li>
+    <li><a class="nav-link" href="#code_examples">Code Examples</a></li>
+    <li><a class="nav-link" href="#references">References</a></li>
+  </ul>
+  </nav>
+  <main id="main-doc">
+        <section class="main-section" id="introduction">
+          <header>Introduction</header>
+
+          <p>teste versionamento git</p>
+          <p>Portugol, also known as structured Portuguese, is a family of programming languages based on the Portuguese language. Some of its variations can be considered pseudocode, and others are complete, context-free languages with defined grammars and implementations in editors or compilers. They are used both to study algorithms and data structures and to create compilers, interpreters and diagramming tools such as flowchart generators.</p>
+      <p></p>
+    </section>
+    <section class="main-section" id="history">
+      <header>History</header>
+      <p>There is conflicting information about the official creators of Portugol, both as a method and as an implementation. According to the blog archive of the Portugol dialect website VisuAlg, the effort was started as a translation of the Pascal programming language into Portuguese between 1980 and 1983 by Professor Antonio Carlos Nicolodi, Pascal being the direct descendant of the programming language called ALGOL, which was only used on mainframes. At the time, the dialect was only called ‘Portugol’ and had no implementation.</p>
+
+<p>Portugol had its first implementation created in 1996 by Cláudio Morgado de Souza. This Pascal-based variation of Portugol is known as Portugol VisuAlg, implemented in its <a href="https://visualg30.yolasite.com/" target="_blank">own editor</a>. It is currently maintained by Nicolodi.</p>
+
+<p>A second variation of Portugol was created by António Manso in 2004 and maintained until 2006, and is quite different from the VisuAlg variation, both in syntax and basic commands. For example, for an algorithm that writes ‘Hello world’ on the screen, we should write:</p>
+<pre><code>
+  algoritmo "ola-mundo"
+    inicio
+      escreva ("Olá mundo")
+    fimalgoritmo
+</code></pre>
+
+<p> As for the variation of the Polytechnic Institute of Tomar (IPT), we write it as follows:</p>
+<pre><code>
+  inicio
+    escrever "Olá mundo"
+  fim
+</code></pre>
+
+<p>O nome Portugol é uma mistura das três palavras: Português, Algol e Pascal, (<em><strong>PORTU</strong></em>guês, AL<em><strong>GO</strong></em>L e Pasca<em><strong>L</strong></em>).</p>
+
+    </section>
+    <section class="main-section" id="variations">
+      <header>Variations</header>
+      <p>Portugol has variations inspired by programming languages other than Pascal, such as C, C++ and Java. <a href="http://lite.acad.univali.br/portugol/" target="_blank">Portugol Studio</a>, implemented by the technology centre at the <a href="https://www.univali.br/" target="_blank">Federal University of Vale do Itajaí (UNIVALI)</a>, and Mapler, developed by students at the Federal Institute of Maranhão, are Java-based implementations, also written entirely in Java. Other well-known variations are:</p>
+      <ul>
+        <li>G-Portugol</li>
+        <li>Portugol Viana</li>
+        <li>P&G editor</li>
+      </ul>
+ <p>Variations such as IPT and Mapler have functionalities in which the user can draw flowcharts and translate these diagrams into Portugol code. Mapler also has the ability to translate Portugol algorithms into high-level languages such as Java, Python and C++[6].</p>
+
+<p>Portugol Viana is a variation of Portugol that continues the implementation of Portugol IPT, with commands, operators, functions, recursive functions, structures and constructors for complex structures such as stacks, queues, linked lists and doubly linked lists[7]. The author is from the <a href="https://www.ipvc.pt/estg/" target="_blank">Viana do Castelo School of Technology and Management</a>.</p>
+
+<p>G-Portugol is a Portugol compiler for executables. It has a compiler for Windows and one for Linux.</p>
+    </section>
+     <section class="main-section" id="portugol_method">
+      <header>Portugol method</header>
+      <p>Portugol as a method or pseudo-language allows any Portuguese speaker to develop structured algorithms in a simpler and more intuitive way, regardless of the syntax of real programming languages. The method can be described as follows:</p>
+
+      <ul>
+        <li>An algorithm is described as a series of steps, like, for example, a cake recipe;</li>
+        <li>The technique of successive refinements is employed, i.e. each step is refined to resemble an instruction that a machine can execute;</li>
+        <li>After the final refinement, the algorithm is coded in some context-free language.</li>
+      </ul>
+
+      <p>For example: an algorithm to print out a series of numbers from 1 to 15 can be described below in natural language:</p>
+      <ul>
+        <li>Define a variable with the value 1;</li>
+        <li>Write the variable;</li>
+        <li>Add 1 to the variable;</li>
+        <li>Repeat the last two steps until the variable has the value 15.</li>
+      </ul>
+
+      <p>Transcribed into Portugol, we would have:</p>
+
+<pre><code>
+  inteiro variavel;
+  variavel <- 1;
+  enquanto variável <= 15
+    escreva(variavel);
+    variavel <- variavel + 1;
+  fim enquanto;
+</code></pre>
+
+<p>It is easy to implement algorithms developed in Portugol by mapping them to the desired programming language. The method has been around since the 1970s and is used to learn algorithms and data structures. It is present in many programming teaching materials.</p>
+
+<p>It is also used in conjunction with block diagrams (such as the Flowchart or Chapin Flowchart. Some variations of Portugol can generate code from flowcharts and vice versa.</p>
+    </section>
+    <section class="main-section" id="code_examples">
+      <header>Code Examples</header>
+      <h2>Portugol VisuAlg</h2>
+      <pre><code>
+algoritmo "ola-mundo"
+  inicio
+    escreva ("Olá mundo")
+  fimalgoritmo
+        </code></pre>
+
+       <h2>Portugol IPT e Portugol Viana</h2>
+       <pre><code>
+  inicio
+      escrever "Olá mundo"
+  fim
+        </code></pre>
+
+    </section>
+    <section class="main-section" id="references">
+      <header>References</header>
+      <p>Thaís Ferraz (2017).<a href="https://www.infoescola.com/noticias/professor-brasileiro-desenvolve-metodo-e-aplicativo-que-facilitam-o-aprendizado-de-programacao/" target="_blank">Professor brasileiro desenvolve método e aplicativo que facilitam o aprendizado de programação</a>. Accessed on 20/01/25</p>
+      <p>António Manso. <a href="http://orion.ipt.pt/~manso/Portugol/index.html" target="_blank">Portugol 2.1</a>. Accessed on 20/01/2025</p>
+      <p> Nicolodi, Antonio Carlos (2017). <a href="https://web.archive.org/web/20201021012134/https://visualg3.com.br/portugol-portugues-estruturado-e-visualg-como-tudo-comecou/" target="_blank">PORTUGOL (Português Estruturado) e VisuAlg como tudo começou.</a>Accessed on 20/01/25</p>
+      <p>Rudek, Marcelo (2012). <a href="https://web.archive.org/web/20150512222718/http://www.las.pucpr.br/rudek/Aulas/arquivos/Apostila_TP.pdf" target="_blank">Apostilas de Técnicas de Programação (PDF)</a><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv-qELnj7HxXzLtlYchkTNIPtkqmpMf8DOAQ&s" alt="Ícone de PDF" width="20" height="20">. Pontifícia Universidade Católica do Paraná. pp. 12 – 27. Accessed on 20/01/25</p>
+
+    </section>
+  </main>
+</body>        
+</html>
